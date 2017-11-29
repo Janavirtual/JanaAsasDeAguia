@@ -1,5 +1,3 @@
-Dentro da pasta: App/ models/aluno.rb:
-
 class Aluno < ActiveRecord::Base
 validates_presence_of :nome, on: :create, message: " não pode ficar em branco"
 validates_presence_of :sobrenome, on: :create, message: " não pode ficar em branco"

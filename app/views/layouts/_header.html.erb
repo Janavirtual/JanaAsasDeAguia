@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/pages/home">Trello</a>
+      <a class="navbar-brand" href="/pages/home">Aeroclube Asas De Aguia</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -22,7 +22,7 @@
         <% if current_user %>
             <li><%= link_to 'Aluno', alunos_path %></li>
             <li><%= link_to 'Aeronave', aeronaves_path %></li>
-            <li><%= link_to 'Editar Profile', edit_user_registration_path %></li>
+            <li><%= link_to 'Editar Perfil', edit_user_registration_path %></li>
             <li><%= link_to 'Sair', destroy_user_session_path, method: :delete %></li>
         <% else %>       
             <li><%= link_to 'Login', new_user_session_path %></li>
