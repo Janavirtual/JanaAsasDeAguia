@@ -29,7 +29,7 @@ class AeronavesController < ApplicationController
 
     respond_to do |format|
       if @aeronafe.save
-        format.html { redirect_to @aeronafe, notice: 'Aeronafe was successfully created.' }
+        format.html { redirect_to @aeronafe, notice: 'Cadastro realizado com sucesso!' }
         format.json { render :show, status: :created, location: @aeronafe }
       else
         format.html { render :new }
