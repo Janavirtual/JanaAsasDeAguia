@@ -20,7 +20,8 @@
       
 
         <% if current_user %>
-            <li><%= link_to 'Task', tasks_path %></li>
+            <li><%= link_to 'Aluno', alunos_path %></li>
+            <li><%= link_to 'Aeronave', aeronaves_path %></li>
             <li><%= link_to 'Editar Profile', edit_user_registration_path %></li>
             <li><%= link_to 'Sair', destroy_user_session_path, method: :delete %></li>
         <% else %>       
