@@ -43,7 +43,7 @@ class AeronavesController < ApplicationController
   def update
     respond_to do |format|
       if @aeronafe.update(aeronafe_params)
-        format.html { redirect_to @aeronafe, notice: 'Aeronafe was successfully updated.' }
+        format.html { redirect_to @aeronafe, notice: 'Aeronave Salvo com  sucesso!.' }
         format.json { render :show, status: :ok, location: @aeronafe }
       else
         format.html { render :edit }

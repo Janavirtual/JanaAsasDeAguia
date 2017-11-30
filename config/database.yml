@@ -4,10 +4,21 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
-default: &default
-  adapter: sqlite3
+#default: &default
+ # adapter: sqlite3
+ # pool: 5
+ 
+ # NOVO CODIGO
+ production: &default
+  adapter: postgresql
+  database: todoism
+  encoding: utf8
+  min_messages: warning
   pool: 5
   timeout: 5000
+
+ # CODIGO ANTIGO
+  
 
 development:
   <<: *default

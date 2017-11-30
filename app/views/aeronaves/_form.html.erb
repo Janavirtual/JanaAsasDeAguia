@@ -1,5 +1,9 @@
 <%= form_for(@aeronafe) do |f| %>
   <% if @aeronafe.errors.any? %>
+ 
+  
+  
+  # codigo antigo
     <div id="error_explanation">
       <h2><%= pluralize(@aeronafe.errors.count, "error") %> prohibited this aeronafe from being saved:</h2>
 
@@ -42,4 +46,6 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+  
+  
 <% end %>
